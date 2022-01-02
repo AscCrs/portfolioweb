@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bienvenido a mi website">
     <meta name="author" content="Cristopher Edurado Ascencio Cruz">
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="static/normalize.css">
+
+    <!-- Fuente -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
     <title>Portfolio</title>
 
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/icono.ico" sizes="32x32" /></head>
 <body>
 
@@ -48,19 +56,22 @@
                     </h2></a>
                 </div>
                 <ul class="menu">
-                    <li><a class="active" href="#Me">Home</a></li>
-                    <li><a href="#about me">About me</a></li>
-                    <li><a href="#port">Portfolio</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><a class="active" href="#Me">Inicio</a></li>
+                    <li><a href="#about me">Acerca de Mi</a></li>
+                    <li><a href="#port">Portafolio</a></li>
+                    <li><a href="#Contact">Contacto</a></li>
                 </ul>
             </nav>
         </header>
+
         <main class="main">
             <div class="info-content">
-                <h1 class="resp">Soy <span>Cristopher</span> desarrollador de fron-end y programador</h1>
-                <p>Conocimientos en programación estructurada, orientada a objetos</p>
+                <h1 class="resp">Soy <a href="#Contact">Cristopher</a> desarrollador front-end y programador.</h1>
+                <p>Conocimientos en programación estructurada, POO, POE, front-end, algunas tecnologias del lado back-end, contruccion y gestion
+                    de bases de datos MySQL y MariaDB. </p>
+                    <p>Analisis de datos y IA en progreso...</p>
                 <a href="#">
-                    <button class="download-cv" download>Download CV</button>
+                    <button class="download-cv" download>Descargar CV</button>
                 </a>
             </div>
             <img src="./img/pixlr-bg-result (1).png" alt="Banner image">
@@ -72,7 +83,7 @@
         <img src="img/pixlr-bg-result (2).png" alt="About image">
         
         <div class="about-info">
-            <h2>About me</h2>
+            <h2>Acerca de mi</h2>
             <div class="divider"></div>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio eius deleniti
                 ipsa voluptates aut fuga dolorum vitae reprehenderit? Nesciunt, rem quis. Doloribus
@@ -80,14 +91,14 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nostrum aperiam
                 ipsum repellendus facilis blanditiis reiciendis odit. Similique, unde! Neque
                 incidunt saepe voluptatum sunt provident earum ea illo ratione facilis.</p>
-            <button class="download-cv">Read more</button>
+            <button class="download-cv">Leer más</button>
         </div>
     </section>
 
     <!-- ! Section que sirve para dar una preview de los portafolios -->
     <section class="portfolio">
         <div id="port" class="portfolio-headings">
-            <h2>My portfolio</h2>
+            <h2>Mi portafolio</h2>
         <div class="divider"></div>
         </div>
         <section class="container">
@@ -186,7 +197,7 @@
 
     <section class="contact-section">
         <div id="Contact" class="contact-headings">
-            <h2>Keep in touch</h2>
+            <h2>Forma de contacto</h2>
             <div class="divider"></div>
         </div>
 
@@ -194,14 +205,15 @@
             <img style="opacity: 0.20;" src="./img/pixlr-bg-result (3).png" alt="Contact Image">
 
             <div class="contact-form">
-                <h4>Send me a message...</h4>
+                <h4>Envia un mensaje...</h4>
 
                 <form class="form">
-                    <input type="text" placeholder="Name" requerid>
+                    <input type="text" placeholder="Nombre" requerid>
                     <input type="email" placeholder="Email" requerid>
-                    <textarea class="clear" placeholder="Place your message here..." requerid>
+                    <textarea style="resize: none;" class="clear" 
+                    placeholder="Escribe tu mensaje aquí..." requerid>
                     </textarea>
-                    <button type="submit" class="btn-submit">Send message</button>
+                    <button type="submit" class="btn-submit">Send Message</button>
                 </form>
             </div>
         </div>
