@@ -15,7 +15,7 @@ body {
 
 .wrapper,
 .portfolio {
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     color: #ffffff;
     background-color: #1b1b1b;
@@ -26,6 +26,13 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 2em;
+    transition: 0.6s;
+    z-index: 100000;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+
 }
 
 .brand {
@@ -95,12 +102,23 @@ body {
     z-index: 1;
 }
 
+.main a:hover {
+    cursor: pointer;
+    color: rgb(190, 18, 53);
+    transition: ease-in 0.20s;
+    -webkit-transition: ease-in 0.20s;
+    -moz-transition: ease-in 0.20s;
+    -ms-transition: ease-in 0.20s;
+    -o-transition: ease-in 0.20s;
+}
+
 h1 {
     font-size: 3em;
 }
 
-h1 span {
+.resp a {
     color: aqua;
+    text-decoration: none;
 }
 
 .download-cv {
@@ -199,22 +217,20 @@ h1 span {
     width: 300px;
     height: 385px;
     background-color: #333131;
-    margin: 1em;
+    margin: 1.5em;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-    overflow:hidden;
 }
 
-.card__image:hover {
-    height: 130px;
-    transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -moz-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    -o-transform: scale(1.3);
+.card:hover {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
 }
 
 .card__image {
@@ -244,12 +260,12 @@ h1 span {
 }
 
 .project-links i {
-    font-size: 1.em;
+    font-size: 1em;
 }
 
 .card .project-details {
     margin: 0 auto;
-    margin: 1em;
+    margin: 1.3em;
     width: 70%;
 } 
 
@@ -276,8 +292,7 @@ h1 span {
 
 .contact-headings h2 {
     font-size:3em;
-    width: 90vw;
-
+    width: 100vw;
 } 
 
 .container-contact {
@@ -287,7 +302,8 @@ h1 span {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     width: 100vw;
-    align-items: center;    }
+    align-items: center;    
+}
 
 .container-contact img {
     width: 800px;
@@ -315,7 +331,7 @@ h1 span {
     outline: 0px;
 }
 
-.form input:hover
+.form input:hover,
 .form textarea:hover {
     color: aqua;
 }
@@ -376,7 +392,7 @@ h1 span {
 .footer-content h5,
 .social-network i {
     padding-top: 0.2em;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #ffffff;
 }
 
@@ -401,7 +417,7 @@ i:hover {
 @media (max-width: 1300px) {
     .wrapper,
     .portfolio {
-        width: 97.8vw;
+        width: 100vw;
         height: 125vh;
     }
 
@@ -424,12 +440,71 @@ i:hover {
     }
 
     .resp {
-        font-size: 25px;
+        font-size: 20px;
+    }
+
+    .info-content p,
+    .about-info p,
+    .card p,
+    .project-details a {
+        font-size: 15px;
+    }
+
+    .project-details-content { 
+        margin-top: 4px;
     }
 
     .main img {
         width: 30rem;
         padding-left: none;
         height: initial;
+    }
+
+    .card-title h2 {
+        font-size: 1em;
+    }
+
+    .contact-section h2,
+    .portfolio-headings h2
+    .about-info h2 {
+        font-size: 30px;
+    }
+
+    .container-contact img {
+        width: 450px;
+        height: 600px;    
+    }
+}
+
+@media (max-width: 768px) {
+    menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #333131;
+        height: 100%;
+        transform: translateX(-400px);
+        padding: 30px;
+        transition: transform .5s ease-in-out;
+    }
+
+    .main img {
+        width: 500px;
+        height: 600px;
+    }
+
+    .navbar ul .menu {
+        transform: translateX(-20px);
+        -webkit-transform: translateX(-20px);
+        -moz-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+        -o-transform: translateX(-20px);
+    }
+    
+    .navbar ul .menu li {
+        display: none;
+        padding: 20px;
+        font-size: 14px;
     }
 }
